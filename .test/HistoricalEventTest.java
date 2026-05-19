@@ -5,12 +5,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HistoricalEventTest {
 
-    private lab02.Date fixedDate;
+    private Date fixedDate;
 
     @BeforeEach
     void setUp() {
         // Use a fixed date to avoid issues with new Date() changing at runtime
-        fixedDate = new Date(20,7,1000);
+        fixedDate = new Date(7, 20, 1000);
         HistoricalEvent event = new HistoricalEvent("Moon Landing", fixedDate);
         HistoricalEvent defaultEvent = new HistoricalEvent();
         HistoricalEvent copy = new HistoricalEvent(event);
